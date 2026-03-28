@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
   const isFrench = lang === 'fr';
 
   const title = isFrench
-    ? "Thalion Labs — Développement Web Sur Mesure à Montréal"
-    : "Thalion Labs — Custom Web Development in Montreal";
+    ? "Thalion Labs — Solutions Tech Sur Mesure à Montréal"
+    : "Thalion Labs — Tailored Tech Solutions in Montreal";
   const description = isFrench
     ? "Studio de développement basé à Montréal. Applications web sur mesure, automatisations et SaaS pour entreprises en croissance. Prix fixe, accès direct."
     : "Montreal-based dev studio building custom web apps, automations, and SaaS for growing businesses. Fixed scope, direct access, no agencies.";

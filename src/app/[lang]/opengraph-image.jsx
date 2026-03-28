@@ -13,8 +13,8 @@ export default async function Image({ params }) {
   const logoSrc = `data:image/png;base64,${logoData.toString('base64')}`
 
   const tagline = isFrench
-    ? 'Développement Web Sur Mesure · Montréal'
-    : 'Custom Web Development · Montreal'
+    ? 'Solutions Tech Sur Mesure · Montréal'
+    : 'Tailored Tech Solutions · Montreal'
 
   const sub = isFrench
     ? 'Applications web, automatisations et SaaS pour entreprises en croissance'
