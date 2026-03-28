@@ -286,36 +286,28 @@
   outline-offset: 3px;
 }
 
+/* ── Mobile flat list (hidden on desktop) ── */
+.mobileSteps { display: none; }
+
 /* ── Responsive ── */
-
-/* Tablet */
 @media (max-width: 900px) {
-  .stickyWrapper { height: auto; } /* disable sticky on tablet/mobile */
-  .sticky { position: relative; height: auto; }
+  .stickyWrapper { display: none; }
 
-  .stickyInner {
+  .mobileSteps {
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 1.5rem;
-    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 4rem 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
-  .indicators {
-    flex-direction: row;
-    width: auto;
-    gap: 1.5rem;
-    align-items: center;
+  .mobileSteps .sectionLabel {
+    margin-bottom: 0.75rem;
   }
-
-  .bigNum { font-size: 3.5rem; }
-
-  .dots { flex-direction: row; gap: 8px; }
-
-  .scrollHintText { display: none; }
 }
 
-/* Mobile */
 @media (max-width: 580px) {
   .ctaCard { padding: 2.25rem 1.5rem; }
-  .stepCard { padding: 1.75rem 1.25rem; }
+  .mobileSteps { padding: 3rem 1.25rem; }
 }

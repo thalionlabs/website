@@ -54,7 +54,7 @@ export default function Process() {
 
   return (
     <section id="process" aria-labelledby="process-heading">
-      {/* ── Sticky scrolling zone ── */}
+      {/* ── Desktop: sticky scrolling zone ── */}
       <div className={styles.stickyWrapper} ref={wrapperRef}>
         <div className={styles.sticky} role="region" aria-live="polite" aria-label={t.process.eyebrow}>
           <div className={styles.stickyInner}>
@@ -89,7 +89,6 @@ export default function Process() {
                 <p className={styles.stepDesc}>{steps[step].desc}</p>
               </div>
 
-              {/* Scroll hint on mobile (no sticky scroll) */}
               <p className={styles.scrollHintText} aria-hidden="true">
                 {step < steps.length - 1 ? '↓ Keep scrolling' : ''}
               </p>
@@ -105,6 +104,21 @@ export default function Process() {
             />
           </div>
         </div>
+      </div>
+
+      {/* ── Mobile: flat list of all steps ── */}
+      <div className={styles.mobileSteps}>
+        <div className={styles.sectionLabel}>
+          <span className={styles.eyebrow}>{t.process.eyebrow}</span>
+          <h2 className={styles.heading}>{t.process.heading}</h2>
+        </div>
+        {steps.map((s) => (
+          <div key={s.num} className={styles.stepCard}>
+            <span className={styles.stepTag}>{s.num}</span>
+            <h3 className={styles.stepTitle}>{s.title}</h3>
+            <p className={styles.stepDesc}>{s.desc}</p>
+          </div>
+        ))}
       </div>
 
       {/* ── CTA below sticky zone ── */}

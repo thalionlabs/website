@@ -8,10 +8,10 @@ export const translations = {
       cta: 'Get Started',
     },
     hero: {
-      badge: 'Available for New Projects',
+      badge: 'Based in Montreal · Available Now',
       heading1: 'Your Business Deserves',
       heading2: 'Better Tech',
-      sub: "Stop losing time and money to software that doesn't fit. We build exactly what your business needs — and nothing it doesn't.",
+      sub: "Your business runs on workarounds that were never meant for this. We build the software that fits — exactly what you need, nothing you don't.",
       primary: 'Start a Project',
       secondary: 'See What We Build',
       stat1Num: '100%',
@@ -25,7 +25,7 @@ export const translations = {
     services: {
       eyebrow: 'What We Build',
       heading: 'The Tools That Move\nYour Business Forward',
-      sub: "Whatever is slowing you down or holding you back — we build the solution.",
+      sub: "If it's costing you time, money, or clients — we build the fix.",
       items: [
         {
           title: 'Web Applications',
@@ -93,7 +93,7 @@ export const translations = {
     contact: {
       eyebrow: 'Get In Touch',
       heading1: 'Tell Us What',
-      heading2: "You're Building",
+      heading2: "You Have In Mind",
       body: "Describe your project or your problem. We'll get back to you within one business day.",
       email: 'contact@thalionlabs.com',
       phone: '(438) 826-8117',
@@ -115,6 +115,7 @@ export const translations = {
     footer: {
       tagline: 'Custom tech for growing businesses.',
       rights: 'All rights reserved.',
+      location: 'Montreal, QC · Serving businesses across Canada',
       built: 'Built with care.',
     },
   },
@@ -128,10 +129,10 @@ export const translations = {
       cta: 'Démarrer',
     },
     hero: {
-      badge: 'Disponible pour de nouveaux projets',
+      badge: 'Basé à Montréal · Disponible maintenant',
       heading1: 'Votre Entreprise Mérite',
       heading2: 'Une Meilleure Tech',
-      sub: "Arrêtez de perdre du temps avec des logiciels qui ne vous conviennent pas. Nous construisons exactement ce dont votre entreprise a besoin.",
+      sub: "Votre entreprise mérite mieux que des solutions génériques. On construit exactement ce qu'il vous faut — rien de plus, rien de moins.",
       primary: 'Démarrer un projet',
       secondary: 'Voir nos réalisations',
       stat1Num: '100%',
@@ -145,7 +146,7 @@ export const translations = {
     services: {
       eyebrow: 'Ce Que Nous Construisons',
       heading: 'Les Outils Qui Font\nAvancer Votre Entreprise',
-      sub: "Peu importe ce qui vous ralentit — nous construisons la solution.",
+      sub: "Si ça vous coûte du temps, de l'argent ou des clients — on construit la solution.",
       items: [
         {
           title: 'Applications Web',
@@ -164,7 +165,7 @@ export const translations = {
     whyUs: {
       eyebrow: 'Pourquoi Thalion Labs',
       heading: 'Un Partenaire, Pas un Fournisseur',
-      body: "Les grandes agences sont trop lentes, trop chères et vous traitent comme un dossier. Avec Thalion Labs, vous travaillez directement avec un développeur senior entièrement investi dans votre réussite.",
+      body: "Les grandes agences sont trop lentes, trop chères et vous traitent comme un simple numéro de dossier. Avec Thalion Labs, vous travaillez directement avec un développeur senior pleinement investi dans votre réussite.",
       cta: 'Parlons-en',
       pillars: [
         {
@@ -213,7 +214,7 @@ export const translations = {
     contact: {
       eyebrow: 'Nous Contacter',
       heading1: 'Dites-Nous Ce Que',
-      heading2: 'Vous Construisez',
+      heading2: 'Vous Avez en Tête',
       body: "Décrivez votre projet ou votre problème. Nous vous répondrons dans un jour ouvrable.",
       email: 'contact@thalionlabs.com',
       phone: '(438) 826-8117',
@@ -235,6 +236,7 @@ export const translations = {
     footer: {
       tagline: 'La tech sur mesure pour les entreprises en croissance.',
       rights: 'Tous droits réservés.',
+      location: 'Montréal, QC · Au service des entreprises partout au Canada',
       built: 'Conçu avec soin.',
     },
   },

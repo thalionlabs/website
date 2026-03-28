@@ -145,4 +145,24 @@
     gap: 3rem;
   }
   .glow { display: none; }
+
+  /* Replace horizontal slide-ins with vertical to avoid overflow/clipping on mobile */
+  .left {
+    transform: translateY(20px);
+  }
+  .left.visible {
+    transform: translateY(0);
+  }
+  .pillar {
+    transform: translateY(20px);
+  }
+  .pillar.pillarVisible {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 580px) {
+  .section { padding: 5rem 1.25rem; }
+  .heading { font-size: 1.75rem; }
+  .pillar { padding: 1.25rem; }
 }

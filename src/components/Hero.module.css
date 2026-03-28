@@ -199,6 +199,9 @@
   cursor: pointer;
   opacity: 0.4;
   transition: opacity 0.2s;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .scrollHint:hover { opacity: 0.8; }
