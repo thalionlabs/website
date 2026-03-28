@@ -1,3 +1,4 @@
+"use client";
 import { useLang } from '../i18n/LanguageContext'
 import styles from './Hero.module.css'
 

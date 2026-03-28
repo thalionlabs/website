@@ -1,35 +1,32 @@
+"use client";
+import Link from 'next/link'
 import { useLang } from '../i18n/LanguageContext'
 import styles from './Footer.module.css'
 
 export default function Footer() {
-  const { t } = useLang()
-
-  const handleNav = (e, href) => {
-    e.preventDefault()
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
-  }
+  const { lang, t } = useLang()
 
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <a href="#hero" className={styles.logo} onClick={e => handleNav(e, '#hero')}>
-            <span className={styles.logoIcon}>T</span>
+          <Link href={`/${lang}#hero`} className={styles.logo}>
+            <img src="/whitelogo.png" alt="Thalion Labs Logo" style={{ height: '32px', width: 'auto', display: 'block' }} />
             <span className={styles.logoText}>Thalion Labs</span>
-          </a>
+          </Link>
           <p className={styles.tagline}>{t.footer.tagline}</p>
         </div>
 
         <nav className={styles.links}>
           {[
-            [t.nav.services, '#services'],
-            [t.nav.whyUs, '#why-us'],
-            [t.nav.process, '#process'],
-            [t.nav.contact, '#contact'],
+            [t.nav.services, `/${lang}#services`],
+            [t.nav.whyUs, `/${lang}#why-us`],
+            [t.nav.process, `/${lang}#process`],
+            [t.nav.contact, `/${lang}#contact`],
           ].map(([label, href]) => (
-            <a key={href} href={href} className={styles.link} onClick={e => handleNav(e, href)}>
+            <Link key={href} href={href} className={styles.link}>
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

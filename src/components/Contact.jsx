@@ -1,3 +1,4 @@
+"use client";
 import { useState, useRef } from 'react'
 import { useLang } from '../i18n/LanguageContext'
 import useReveal from '../hooks/useReveal'

@@ -1,3 +1,4 @@
+"use client";
 import { useRef, useState, useEffect } from 'react'
 import { useLang } from '../i18n/LanguageContext'
 import styles from './Process.module.css'
