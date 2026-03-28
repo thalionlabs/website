@@ -19,7 +19,7 @@ export default function Contact() {
     setStatus('sending')
 
     const data = new FormData()
-    data.append('access_key', import.meta.env.VITE_WEB3FORMS_KEY)
+    data.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY)
     data.append('name', form.name)
     data.append('email', form.email)
     data.append('business', form.business || '—')
@@ -46,7 +46,7 @@ export default function Contact() {
         <div className={`${styles.left} ${revealed ? styles.visible : ''}`}>
           <span className={styles.eyebrow}>{t.contact.eyebrow}</span>
           <h2 id="contact-heading" className={styles.heading}>
-            {t.contact.heading1}<br/>{t.contact.heading2}
+            {t.contact.heading1}<br />{t.contact.heading2}
           </h2>
           <p className={styles.body}>{t.contact.body}</p>
 
@@ -54,8 +54,8 @@ export default function Contact() {
             <a href={`mailto:${t.contact.email}`} className={styles.contactItem}>
               <div className={styles.contactIcon} aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <rect x="1" y="4" width="16" height="11" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M1 7l8 5 8-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  <rect x="1" y="4" width="16" height="11" rx="2" stroke="currentColor" strokeWidth="1.5" />
+                  <path d="M1 7l8 5 8-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </div>
               <span>{t.contact.email}</span>
@@ -64,7 +64,7 @@ export default function Contact() {
             <a href={`tel:+14388268117`} className={styles.contactItem}>
               <div className={styles.contactIcon} aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <path d="M3 2h3.5l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12 10l4 1.5V15a1 1 0 01-1 1C6.4 16 2 11.6 2 3a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M3 2h3.5l1.5 4-2 1.5c1 2 2.5 3.5 4.5 4.5L12 10l4 1.5V15a1 1 0 01-1 1C6.4 16 2 11.6 2 3a1 1 0 011-1z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <span>{t.contact.phone}</span>
@@ -73,8 +73,8 @@ export default function Contact() {
             <div className={styles.contactItem}>
               <div className={styles.contactIcon} aria-hidden="true">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <circle cx="9" cy="9" r="7" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M9 5v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="9" cy="9" r="7" stroke="currentColor" strokeWidth="1.5" />
+                  <path d="M9 5v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </div>
               <span>{t.contact.responseTime}</span>
@@ -87,8 +87,8 @@ export default function Contact() {
             <div className={styles.success} role="status" aria-live="polite">
               <div className={styles.successIcon} aria-hidden="true">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                  <circle cx="24" cy="24" r="22" stroke="#22c55e" strokeWidth="2.5"/>
-                  <path d="M14 24l7 7 13-13" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="24" cy="24" r="22" stroke="#22c55e" strokeWidth="2.5" />
+                  <path d="M14 24l7 7 13-13" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <h3 className={styles.successTitle}>{t.contact.successTitle}</h3>
@@ -175,7 +175,7 @@ export default function Contact() {
                   <>
                     {t.contact.submit}
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                      <path d="M2 8l11-5-5 11-2-4-4-2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+                      <path d="M2 8l11-5-5 11-2-4-4-2z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
                     </svg>
                   </>
                 )}
